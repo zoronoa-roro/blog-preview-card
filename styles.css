@@ -3,6 +3,28 @@
 }
 :root{
     --color1:hsl(47, 88%, 63%);
+    --color2:hsl(47, 62%, 90%);
+}
+@keyframes name{
+    0%{
+        background:linear-gradient(-45deg,var(--color2) 50%,white 70%,var(--color2) 90%);
+    }
+    20%{
+        background:linear-gradient(-45deg,var(--color2) 40%,white 60%,var(--color2) 80%);
+    }
+    40%{
+        background:linear-gradient(-45deg,var(--color2) 30%,white 50%,var(--color2) 70%)
+    }
+    60%{
+        background:linear-gradient(-45deg,var(--color2) 20%,white 40%,var(--color2) 60%)
+    }
+    80%{
+        background:linear-gradient(-45deg,var(--color2) 10%,white 30%,var(--color2) 50%)
+    }
+
+    100%{
+        background:linear-gradient(-45deg,var(--color2) 0%,white 20%,var(--color2) 40%);
+    }
 }
 body{
     height:100vh;
@@ -61,5 +83,11 @@ figcaption{
     margin-top: 10px;
 }
 .main:hover{
-    box-shadow: 4px 4px;
+    box-shadow: 1px 1px;
+    animation: name 300ms linear 500ms 2 alternate  ;
+}
+.main:active{
+    transform: scale(1.01);
+    cursor: not-allowed;
+
 }

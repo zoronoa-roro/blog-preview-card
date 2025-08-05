@@ -91,3 +91,12 @@ figcaption{
     cursor: not-allowed;
 
 }
+
+@media(max-width:350px){
+    .main{
+        transform: scale(0.7);
+    }
+    .attribution{
+        width:90vw;
+        margin:auto;
+    }
